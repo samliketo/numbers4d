@@ -133,6 +133,9 @@ for table_row in fetched.select('.resultbottom'):
 print array
 print len(array)
 
+if len(array) < 20:
+	speak_words('results incomplete, come back later')
+else:
 speak_words('Magnum Special');
 
 for k in range (0, 10, 1):
